@@ -1,0 +1,39 @@
+<!-- <p>ficha-empleado works!</p> -->
+
+
+
+
+<div class="card mt-5">
+<h1 class="title">Ficha Empleado</h1>
+  <div *ngIf="empleado">
+    <div class="input-container">
+        <strong>Id:</strong> <input type="text" [(ngModel)]="empleado.id" />
+      </div>
+    <div class="input-container">
+      <strong>Nombre:</strong> <input type="text" [(ngModel)]="empleado.nombres" />
+    </div>
+    <div class="input-container">
+      <strong>Apellidos:</strong> <input type="text" [(ngModel)]="empleado.apellidos" />
+    </div>
+    <div class="input-container">
+      <strong>Edad:</strong> <input type="text" [(ngModel)]="empleado.edad" />
+    </div>
+    <div class="input-container">
+      <strong>Genero:</strong> <input type="text" [(ngModel)]="empleado.genero" />
+    </div>
+    <div class="input-container">
+      <strong>Estado Civil:</strong> <input type="text" [(ngModel)]="empleado.estado_civil" />
+    </div>
+    <div class="input-container">
+      <strong>Activo:</strong> <input type="text" [(ngModel)]="empleado.activo" />
+    </div>
+    <div>
+        <button (click)="updateEmpleado()" class="btn btn-primary">
+            Guardar
+        </button>
+        <button (click)="backList()" class="btn btn-secondary">
+          Regresar
+      </button>
+    </div>
+  </div>
+</div>

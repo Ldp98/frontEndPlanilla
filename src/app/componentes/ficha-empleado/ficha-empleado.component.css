@@ -1,0 +1,29 @@
+.card {
+    width: 600px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: left;
+  }
+
+  .input-container strong {
+    width: 100px; /* Ancho fijo para todas las etiquetas strong */
+    display: inline-block;
+  }
+
+  .input-container {
+    margin-bottom: 10px;
+  }
+
+  input {
+    width: 50%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+
+  .title{
+    text-align: center;
+  }

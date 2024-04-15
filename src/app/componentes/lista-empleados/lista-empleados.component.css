@@ -1,0 +1,34 @@
+.item{
+    text-decoration: none;
+  }
+
+.card {
+    width: 600px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: left;
+  }
+
+  .title{
+    text-align: center;
+  }
+
+  .item{
+    text-decoration: none;
+  }
+
+  .item-empleado {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+.lista-empleados {
+    list-style-type: none;
+    padding: 0;
+}
+
+.item-empleado:hover {
+    background-color: #f9f9f9;
+}

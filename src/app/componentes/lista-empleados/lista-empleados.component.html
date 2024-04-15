@@ -1,0 +1,20 @@
+<!-- <p>lista-empleados works!</p> -->
+
+<div class="card mt-5">
+
+    <h1 class="title">Lista Empleados</h1>
+        <ul class="lista-empleados">
+            <li class="item-empleado" *ngFor="let empleado of empleados ">
+                <a class="item" [routerLink]="['/empleados', empleado.id]">
+                    {{empleado.id}} 
+                    {{ empleado.nombres }} 
+                    {{ empleado.apellidos }}
+                </a>
+            </li>
+         </ul>
+    <div>
+        <button (click)="newEmpleado()" class="btn btn-primary">
+            Nuevo Empleado
+        </button>
+    </div>
+</div>

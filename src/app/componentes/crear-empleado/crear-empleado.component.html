@@ -1,0 +1,23 @@
+<!-- <p>crear-empleado works!</p> -->
+<h2 class="title">Nuevo Empleado</h2>
+<form (submit)="createEmpleado()">
+  <label for="nombre">Nombre:</label>
+  <input type="text" id="nombre" name="nombre" [(ngModel)]="nuevoEmpleado.nombres" required>
+
+  <label for="apellido">Apellido:</label>
+  <input type="text" id="apellido" name="apellido" [(ngModel)]="nuevoEmpleado.apellidos" required>
+
+  <label for="edad">Edad:</label>
+  <input type="number" id="edad" name="edad" [(ngModel)]="nuevoEmpleado.edad" required>
+
+  <label for="edad">Genero:</label>
+  <input type="text" id="edad" name="edad" [(ngModel)]="nuevoEmpleado.genero" required>
+
+  <label for="edad">Estado Civil:</label>
+  <input type="text" id="edad" name="edad" [(ngModel)]="nuevoEmpleado.estado_civil" required>
+
+  <label for="edad">Activo:</label>
+  <input type="text" id="edad" name="edad" [(ngModel)]="nuevoEmpleado.activo" required>
+
+  <button type="submit">Crear</button>
+</form>
